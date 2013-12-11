@@ -55,3 +55,9 @@ github "xquartz",    "1.1.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+github "chrome",     "1.1.2"
+github "dropbox",    "1.2.0"
+github "iterm2",     "1.0.6"
+github "skype",      "1.0.7"
+github "transmit",   "1.0.1"
