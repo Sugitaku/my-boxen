@@ -54,6 +54,11 @@ GITHUBTARBALL
     iterm2 (1.0.6)
 
 GITHUBTARBALL
+  remote: boxen/puppet-java
+  specs:
+    java (1.2.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
     nginx (1.4.2)
@@ -99,6 +104,11 @@ GITHUBTARBALL
     skype (1.0.7)
 
 GITHUBTARBALL
+  remote: boxen/puppet-sublime_text_2
+  specs:
+    sublime_text_2 (1.1.2)
+
+GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
@@ -141,6 +151,7 @@ DEPENDENCIES
   hub (= 1.0.3)
   inifile (= 1.0.0)
   iterm2 (= 1.0.6)
+  java (= 1.2.0)
   nginx (= 1.4.2)
   nodejs (= 3.3.0)
   openssl (= 1.0.0)
@@ -151,6 +162,7 @@ DEPENDENCIES
   ruby (= 6.7.2)
   skype (= 1.0.7)
   stdlib (= 4.1.0)
+  sublime_text_2 (= 1.1.2)
   sudo (= 1.0.0)
   transmit (= 1.0.1)
   tunnelblick (= 1.0.4)

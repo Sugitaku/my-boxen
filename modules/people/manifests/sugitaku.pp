@@ -15,7 +15,12 @@ class people::sugitaku {
   include chrome
   include dropbox
   include iterm2::stable
+  include java
   include skype
+  include sublime_text_2
+  sublime_text_2::package { 'Emmet':
+    source => 'sergeche/emmet-sublime'
+  }
   include transmit
   include tunnelblick::beta
 
