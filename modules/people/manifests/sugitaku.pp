@@ -46,6 +46,16 @@ class people::sugitaku {
     ]:
   }
 
+  # ricty font
+  homebrew::tap { 'sanemat/font': }
+  package { 'sanemat/font/ricty':
+    require => Homebrew::Tap["sanemat/font"]
+  }
+  exec { 'set ricty':
+    command => "cp -f ${homebrew::config::installdir}/share/fonts/Ricty*.ttf ~/Library/Fonts/ && fc-cache -vf",
+    require => Package["sanemat/font/ricty"]
+  }
+
   $home = "/Users/${::boxen_user}"
 
   # dotfile
