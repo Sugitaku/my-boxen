@@ -53,20 +53,20 @@ class people::sugitaku {
   repository { $dotfiles:
     source => 'Sugitaku/dotfiles',
   } 
-  exec {  "ln -s dotfiles/.zshrc .zshrc":
-    cwd => $home,
-    creates => "${home}/.zshrc"
+  file { "${home}/.zshrc":
+    ensure => link,
+    target => "${dotfiles}/.zshrc"
   }
-  exec {  "ln -s dotfiles/.tmux.conf .tmux.conf":
-    cwd => $home,
-    creates => "${home}/.tmux.conf"
+  file { "${home}/.tmux.conf":
+    ensure => link,
+    target => "${dotfiles}/.tmux.conf"
   }
   file { "${dotfiles}/.emacs.d/conf":
     ensure => directory
   }
-  exec {  "ln -s dotfiles/.emacs.d .emacs.d":
-    cwd => $home,
-    creates => "${home}/.emacs.d"
+  file { "${home}/.emacs.d":
+    ensure => link,
+    target => "${dotfiles}/.emacs.d/"
   }
   osx_chsh { $::luser:
     shell => "${boxen::config::homebrewdir}/bin/zsh";
