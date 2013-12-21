@@ -23,6 +23,8 @@ class people::sugitaku {
   }
   include transmit
   include tunnelblick::beta
+  include vagrant
+  include virtualbox
 
   package {
     'GoogleJapaneseInput':

@@ -124,6 +124,16 @@ GITHUBTARBALL
     tunnelblick (1.0.4)
 
 GITHUBTARBALL
+  remote: boxen/puppet-vagrant
+  specs:
+    vagrant (3.0.2)
+
+GITHUBTARBALL
+  remote: boxen/puppet-virtualbox
+  specs:
+    virtualbox (1.0.9)
+
+GITHUBTARBALL
   remote: boxen/puppet-xquartz
   specs:
     xquartz (1.1.0)
@@ -166,5 +176,7 @@ DEPENDENCIES
   sudo (= 1.0.0)
   transmit (= 1.0.1)
   tunnelblick (= 1.0.4)
+  vagrant (= 3.0.2)
+  virtualbox (= 1.0.9)
   xquartz (= 1.1.0)
 
