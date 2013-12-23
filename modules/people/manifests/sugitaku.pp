@@ -13,6 +13,7 @@ class people::sugitaku {
 
   # local application
   include chrome
+  include cord
   include dropbox
   include iterm2::stable
   include java
@@ -47,6 +48,7 @@ class people::sugitaku {
       'emacs',
       'tmux',
       'tig',
+      'wget',
       'zsh',
     ]:
   }

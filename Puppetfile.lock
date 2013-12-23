@@ -9,6 +9,11 @@ GITHUBTARBALL
     chrome (1.1.2)
 
 GITHUBTARBALL
+  remote: boxen/puppet-cord
+  specs:
+    cord (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (1.0.0)
@@ -151,6 +156,7 @@ GITHUBTARBALL
 DEPENDENCIES
   boxen (= 3.3.4)
   chrome (= 1.1.2)
+  cord (= 1.0.0)
   dnsmasq (= 1.0.0)
   dropbox (= 1.2.0)
   foreman (= 1.0.0)

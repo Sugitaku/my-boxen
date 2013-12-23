@@ -57,6 +57,7 @@ github "xquartz",    "1.1.0"
 # https://github.com/boxen.
 
 github "chrome",     "1.1.2"
+github "cord",       "1.0.0"
 github "dropbox",    "1.2.0"
 github "iterm2",     "1.0.6"
 github "java",       "1.2.0"
