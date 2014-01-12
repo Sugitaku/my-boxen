@@ -12,7 +12,9 @@ class people::sugitaku {
   include osx::software_update
 
   # local application
+  include appcleaner
   include chrome
+  include chrome::chromium
   include cord
   include dropbox
   include iterm2::stable
