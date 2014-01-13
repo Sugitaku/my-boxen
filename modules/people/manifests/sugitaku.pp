@@ -48,6 +48,9 @@ class people::sugitaku {
   package {
     [
       'emacs',
+      'gawk',
+      'gnu-sed',
+      'gnu-time',
       'tmux',
       'tig',
       'wget',
