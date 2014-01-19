@@ -53,6 +53,7 @@ class people::sugitaku {
       'gnu-time',
       'tmux',
       'tig',
+      'tree',
       'wget',
       'zsh',
     ]:
