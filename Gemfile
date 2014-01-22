@@ -11,6 +11,7 @@ gem "rake",                   "10.0.3"
 gem "rspec-puppet",           "0.1.6"
 gem "json",                   "<= 1.6.1"
 gem "knife-solo",             "~> 0.4.1"
+gem "serverspec",             "~> 0.14.4"
 
 group :development do
   gem "aws-sdk", "~> 1.21"
