@@ -30,9 +30,9 @@ class people::sugitaku {
   include virtualbox
 
   package {
-    'GomPlayer':
-      source => "http://app.gomtv.com/GOMForMac/gom.pkg",
-      provider => pkgdmg;
+    #'GomPlayer':
+    #  source => "http://app.gomtv.com/GOMForMac/gom.pkg",
+    #  provider => pkgdmg;
     'GoogleJapaneseInput':
       source => "http://dl.google.com/japanese-ime/latest/GoogleJapaneseInput.dmg",
       provider => pkgdmg;
