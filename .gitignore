@@ -11,3 +11,5 @@
 !/shared/README.md
 /vendor/gems/
 /chef-repo
+/Rakefile
+/spec
