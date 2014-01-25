@@ -42,6 +42,9 @@ class people::sugitaku {
     'SophosAntivirusForMac':
       source => "http://downloads.sophos.com/home-edition/savosx_90_he.zip",
       provider => compressed_app;
+    'LastfmScrobblerForMac':
+      source => "http://cdn.last.fm/client/Mac/Last.fm-2.1.36.zip",
+      provider => compressed_app;
   }
 
   # homebrew
