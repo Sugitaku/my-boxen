@@ -15,6 +15,8 @@ gem "serverspec",             "~> 0.14.4"
 gem "selenium-webdriver",     "~> 2.39.0"
 gem "sass",                   "~> 3.2.14"
 gem "compass",                "~> 0.12.2"
+gem "guard",                  "~> 2.3.0"
+gem "guard-rspec",            "~> 4.2.4"
 
 group :development do
   gem "aws-sdk", "~> 1.21"
