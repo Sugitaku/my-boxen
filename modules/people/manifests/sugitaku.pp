@@ -30,12 +30,17 @@ class people::sugitaku {
   include virtualbox
 
   package {
+    # There was a security incident in GOM Player.
     #'GomPlayer':
     #  source => "http://app.gomtv.com/GOMForMac/gom.pkg",
     #  provider => pkgdmg;
     'GoogleJapaneseInput':
       source => "http://dl.google.com/japanese-ime/latest/GoogleJapaneseInput.dmg",
       provider => pkgdmg;
+    # Boxen can't install HAXM, we need manual installation.
+    #'InelHadwareAcceleratedExecutionManagerForMac':
+    #  source => "http://software.intel.com/sites/default/files/haxm-macosx_r03_hotfix.zip",
+    #  provider => compressed_app;
     'LastfmScrobblerForMac':
       source => "http://cdn.last.fm/client/Mac/Last.fm-2.1.36.zip",
       provider => compressed_app;

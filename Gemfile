@@ -12,6 +12,7 @@ gem "rspec-puppet",           "0.1.6"
 gem "json",                   "<= 1.6.1"
 gem "knife-solo",             "~> 0.4.1"
 gem "serverspec",             "~> 0.14.4"
+gem "selenium-webdriver",     "~> 2.39.0"
 
 group :development do
   gem "aws-sdk", "~> 1.21"
