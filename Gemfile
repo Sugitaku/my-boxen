@@ -13,6 +13,8 @@ gem "json",                   "<= 1.6.1"
 gem "knife-solo",             "~> 0.4.1"
 gem "serverspec",             "~> 0.14.4"
 gem "selenium-webdriver",     "~> 2.39.0"
+gem "sass",                   "~> 3.2.14"
+gem "compass",                "~> 0.12.2"
 
 group :development do
   gem "aws-sdk", "~> 1.21"

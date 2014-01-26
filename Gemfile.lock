@@ -43,13 +43,19 @@ GEM
       rack
     childprocess (0.4.0)
       ffi (~> 1.0, >= 1.0.11)
+    chunky_png (1.2.9)
     coderay (1.1.0)
+    compass (0.12.2)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
     diff-lcs (1.2.4)
     erubis (2.7.0)
     facter (1.7.3)
     faraday (0.8.8)
       multipart-post (~> 1.2.0)
     ffi (1.9.3)
+    fssm (0.2.10)
     hashie (2.0.5)
     hiera (1.2.1)
       json_pure
@@ -132,6 +138,7 @@ GEM
     rspec-puppet (0.1.6)
       rspec
     rubyzip (1.1.0)
+    sass (3.2.14)
     sawyer (0.5.1)
       addressable (~> 2.3.5)
       faraday (~> 0.8, < 0.10)
@@ -160,6 +167,7 @@ PLATFORMS
 DEPENDENCIES
   aws-sdk (~> 1.21)
   boxen (~> 2.0.4)
+  compass (~> 0.12.2)
   hiera (~> 1.1)
   json (<= 1.6.1)
   knife-solo (~> 0.4.1)
@@ -172,5 +180,6 @@ DEPENDENCIES
   rake (= 10.0.3)
   rbvmomi
   rspec-puppet (= 0.1.6)
+  sass (~> 3.2.14)
   selenium-webdriver (~> 2.39.0)
   serverspec (~> 0.14.4)
