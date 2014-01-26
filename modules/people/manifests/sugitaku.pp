@@ -56,6 +56,7 @@ class people::sugitaku {
   package {
     [
       'android-sdk',
+      'chromedriver',
       'emacs',
       'gawk',
       'gnu-sed',
