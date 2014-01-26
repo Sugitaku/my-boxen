@@ -36,20 +36,21 @@ class people::sugitaku {
     'GoogleJapaneseInput':
       source => "http://dl.google.com/japanese-ime/latest/GoogleJapaneseInput.dmg",
       provider => pkgdmg;
+    'LastfmScrobblerForMac':
+      source => "http://cdn.last.fm/client/Mac/Last.fm-2.1.36.zip",
+      provider => compressed_app;
     'LimeChatForMac':
       source => "https://downloads.sourceforge.net/project/limechat/limechat/LimeChat_2.39.tbz",
       provider => compressed_app;
     'SophosAntivirusForMac':
       source => "http://downloads.sophos.com/home-edition/savosx_90_he.zip",
       provider => compressed_app;
-    'LastfmScrobblerForMac':
-      source => "http://cdn.last.fm/client/Mac/Last.fm-2.1.36.zip",
-      provider => compressed_app;
   }
 
   # homebrew
   package {
     [
+      'android-sdk',
       'emacs',
       'gawk',
       'gnu-sed',
