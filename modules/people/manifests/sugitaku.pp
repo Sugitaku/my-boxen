@@ -61,6 +61,8 @@ class people::sugitaku {
       'gawk',
       'gnu-sed',
       'gnu-time',
+      'htop-osx',
+      'pstree',
       'tmux',
       'tig',
       'tree',
