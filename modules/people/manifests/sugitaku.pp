@@ -71,6 +71,19 @@ class people::sugitaku {
     ]:
   }
 
+  # install pip and aws-cli
+  exec { 'install pip':
+    user => 'root',
+    command => 'easy_install pip',
+    creates => '/usr/local/bin/pip',
+    onlyif => 'test ! -f /usr/local/bin/pip'
+  } -> exec { 'install aws cli':
+    user => 'root',
+    command => '/usr/local/bin/pip install awscli',
+    creates => '/usr/local/bin/aws',
+    onlyif => 'test ! -f /usr/local/bin/aws'
+  }
+
   # ricty font
   homebrew::tap { 'sanemat/font': }
   package { 'sanemat/font/ricty':
@@ -78,7 +91,8 @@ class people::sugitaku {
   }
   exec { 'set ricty':
     command => "cp -f ${homebrew::config::installdir}/share/fonts/Ricty*.ttf ~/Library/Fonts/ && fc-cache -vf",
-    require => Package["sanemat/font/ricty"]
+    require => Package["sanemat/font/ricty"],
+    onlyif => 'test ! -f ~/Library/Fonts/Ricty-Bold.ttf'
   }
 
   $home = "/Users/${::boxen_user}"
