@@ -17,6 +17,7 @@ gem "sass",                   "~> 3.2.14"
 gem "compass",                "~> 0.12.2"
 gem "guard",                  "~> 2.3.0"
 gem "guard-rspec",            "~> 4.2.4"
+gem "rails",                  "~> 4.0.3"
 
 group :development do
   gem "aws-sdk", "~> 1.21"
