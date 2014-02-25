@@ -18,6 +18,9 @@ class people::sugitaku {
   include cord
   include dropbox
   include iterm2::stable
+  class { 'intellij':
+    edition => 'ultimate'
+  }
   include java
   include skype
   include sublime_text_2
