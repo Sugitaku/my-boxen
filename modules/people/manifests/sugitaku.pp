@@ -65,6 +65,7 @@ class people::sugitaku {
       'gnu-sed',
       'gnu-time',
       'htop-osx',
+      'jq',
       'pstree',
       'tmux',
       'tig',
