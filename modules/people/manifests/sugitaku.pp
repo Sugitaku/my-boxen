@@ -33,6 +33,9 @@ class people::sugitaku {
   include virtualbox
 
   package {
+    'Dash':
+      source => "http://tokyo.kapeli.com/Dash.zip",
+      provider => compressed_app;
     # There was a security incident in GOM Player.
     #'GomPlayer':
     #  source => "http://app.gomtv.com/GOMForMac/gom.pkg",
